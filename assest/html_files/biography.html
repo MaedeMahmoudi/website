@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link rel="stylesheet" href="../css_files/style_biography.css">
+      <link rel="stylesheet" href="../js/jquery-ui-1.14.1.custom/jquery-ui.min.css">
+      <link rel="stylesheet" href="../js/vis.min.css" />
+      <script src="../js/vis.min.js"></script>
+      <script src="../js/jquery-4.0.0.min.js"></script>
+      <script src="../js/jquery-ui.min.js"></script>
+      <link rel="stylesheet" href="../js/vis.min.css" />
+      <script src="../js/vis.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+
+     
+    <title>زندگی نامه فروغ فرخزاد</title>
+</head>
+<body>
+
+    <nav>
+        <a href="../../index.html">صفحه اصلی</a>
+        <a href="biography.html">زندگینامه</a>
+        <a href="poems.html">اشعار</a>
+        <a href="films.html">فیلم ها</a>
+        <a href="gallery.html">گالری</a>
+    </nav>
+
+    <h1>زندگی نامه فروغ فرخزاد</h1>
+
+    <div class="content_section">
+       <h2>رویدادهای زندگی</h2>
+
+       <div class="view-controls">
+           <button class="view-btn active" data-view="timeline">جدول زمانی</button>
+           <button class="view-btn" data-view="network">شبکه روابط</button>
+           <button class="view-btn" data-view="text">نمایش متنی</button>
+       </div>
+
+
+       <div id="visualization-container">
+           <div id="visualization"></div>
+
+       </div>
+
+       <div id="text-timeline">
+          <div class="timeline">
+              <div class="timeline-item">
+                  <h3>تولد: 1313</h3>
+                  <p>فروغ در 8 دی 1313 در امیریه تهران متولد شد</p>
+              </div>
+
+              <div class="timeline-item">
+                  <h3>ازدواج: 1329</h3>
+                  <p>در 16 سالگی با پرویز شاپور ازدواج کرد</p>
+              </div>
+
+              <div class="timeline-item">
+                  <h3>تولد فرزند: 1330</h3>
+                  <p>تنها فرزندش کامیار شاپور متولد شد </p>
+              </div>
+
+              <div class="timeline-item">
+                  <h3>اولین مجموعه شعر: 1331</h3>
+                  <p>مجموعه شعر (اسیر) را در 18 سالگی منتشر کرد </p>
+              </div>
+
+              <div class="timeline-item">
+                  <h3>آشنایی با گلستان: 1337</h3>
+                  <p>با ابراهیم گلستان آشنا شد و همکاری با سازمان فیلم گلستان را آغاز کرد</p>
+              </div>
+
+              <div class="timeline-item">
+                  <h3>مستند خانه سیاه است:1341</h3>
+                  <p>فیلم مستند خانه سیاه است را درباره آسایشگاه جذامیان ساخت</p>
+              </div>
+
+              <div class="timeline-item">
+                  <h3>تولدی دیگر: 1343</h3>
+                  <p>شاهکارش(تولدی دیگر) را منتشر کرد که نقطه عطف شعر معاصر فارسی شد </p>
+              </div>
+
+              <div class="timeline-item">
+                  <h3>در گذشت: 1345</h3>
+                  <p>در 24 بهمن 1345 در 32 سالگی بر اثر سانحه رانندگی در گذشت</p>
+              </div>
+          </div>
+       </div>
+    </div>
+    
+    <div class="works-section">
+        <h2>آثار فروغ فرخزاد</h2>
+        <div id="works-container">
+            <p> ...در حال بارگذاری آثار</p>
+        </div>
+        <button id="toggle-works" style="margin-top: 30px;margin-bottom: 30px; padding: 10px ; background: #5d4037; color: white; border: none; border-radius: 5px; cursor: pointer;">
+            نمایش/مخفی کردن آثار
+        </button>
+    </div>
+
+    <div class="family">
+        <h2>خانواده و روابط</h2>
+        <div class="family-members">
+            <div class="family-member">
+                <p><b>پدر:</b>محمد فرخزاد</p>
+                <img src="../pictures/pedar.jpg" alt="محمد فرخزاد">
+            </div>
+            <div class="family-member">
+                <p><b>مادر:</b>توران وزیری تبار</p>
+                <img src="../pictures/mother.jpg" alt="توران وزیری تبار">
+            </div>
+            <div class="family-member">
+                <p><b>همسر:</b>پرویز شاپور</p>
+                <img src="../pictures/forogh3.jpeg" alt="پرویز شاپور">
+            </div>
+            <div class="family-member">
+                <p><b>فرزند:</b>کامیار شاپور</p>
+                <img src="../pictures/farzand.jpeg" alt="کامیار شاپور">
+            </div>
+            <div class="family-member">
+                <p><b>برادر:</b>فریدون فرخزاد</p>
+                <img src="../pictures/sister&brother.jpg" alt="فریدون فرخزاد">
+            </div>
+            <div class="family-member">
+                <p><b>خواهر:</b>گلوریا فرخزاد</p>
+                <img src="../pictures/sister.jpg" alt="گلوریا فرخزاد">
+            </div>
+        </div>
+    </div>
+
+    <div class="education">
+        <h2>تحصیلات و علایق</h2>
+        <p>فروغ تا کلاس سوم دبیرستان در دبیرستان خسروخاور تحصیل کرد و سپس به هنرستان بانوان رفت 
+            و در رشته خیاطی فارغ التحصیل شد
+        </p>
+        <p><b>علایق هنری:</b>نقاشی,سینما,تئاتر,موسیقی کلاسیک</p>
+        <p><b>سفرها:</b>ایتالیا,آلمان,انگلستان</p>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            console.log("صفحه زندگینامه بارگذاری شد");
+            
+            let network = null;
+            let timeline = null;
+            let currentView = 'text';
+            
+            $('#visualization-container').hide();
+            
+            
+            const nodes = new vis.DataSet([
+                {id: 1, label: 'فروغ فرخزاد\n۱۳۱۳-۱۳۴۵', shape: 'box', color: '#5d4037', font: {color: 'white', size: 16}, x: 0, y: 0},
+                {id: 2, label: 'تولد\n۸ دی ۱۳۱۳', shape: 'circle', color: '#8d6e63', x: -200, y: -100},
+                {id: 3, label: 'ازدواج\n۱۳۲۹', shape: 'circle', color: '#a1887f', x: -150, y: -50},
+                {id: 4, label: 'تولد کامیار\n۱۳۳۰', shape: 'circle', color: '#bcaaa4', x: -100, y: 0},
+                {id: 5, label: 'انتشار اسیر\n۱۳۳۱', shape: 'circle', color: '#d7ccc8', x: -50, y: 50},
+                {id: 6, label: 'آشنایی با گلستان\n۱۳۳۷', shape: 'circle', color: '#8d6e63', x: 0, y: 100},
+                {id: 7, label: 'خانه سیاه است\n۱۳۴۱', shape: 'circle', color: '#a1887f', x: 50, y: 150},
+                {id: 8, label: 'تولدی دیگر\n۱۳۴۳', shape: 'circle', color: '#d7ccc8', font: {color: '#5d4037'}, x: 100, y: 200},
+                {id: 9, label: 'درگذشت\n۲۴ بهمن ۱۳۴۵', shape: 'circle', color: '#3e2723', font: {color: 'white'}, x: 150, y: 250},
+            ]);
+
+            const edges = new vis.DataSet([
+                {from: 1, to: 2, arrows: 'to', color: {color: '#5d4037'}},
+                {from: 1, to: 3, arrows: 'to', color: {color: '#8d6e63'}},
+                {from: 1, to: 4, arrows: 'to', color: {color: '#a1887f'}},
+                {from: 1, to: 5, arrows: 'to', color: {color: '#bcaaa4'}},
+                {from: 1, to: 6, arrows: 'to', color: {color: '#8d6e63'}},
+                {from: 1, to: 7, arrows: 'to', color: {color: '#a1887f'}},
+                {from: 1, to: 8, arrows: 'to', color: {color: '#d7ccc8'}},
+                {from: 1, to: 9, arrows: 'to', color: {color: '#3e2723'}},
+            ]);
+            
+            const timelineItems = new vis.DataSet([
+                {id: 1, content: 'تولد', start: '1934-12-29', group: 1, title: 'فروغ در 8 دی 1313 در امیریه تهران متولد شد'},
+                {id: 2, content: 'ازدواج', start: '1950-01-01', group: 2, title: 'در 16 سالگی با پرویز شاپور ازدواج کرد'},
+                {id: 3, content: 'تولد کامیار', start: '1951-01-01', group: 3, title: 'تنها فرزندش کامیار شاپور متولد شد'},
+                {id: 4, content: 'اسیر', start: '1952-01-01', group: 4, title: 'مجموعه شعر اسیر را در 18 سالگی منتشر کرد'},
+                {id: 5, content: 'آشنایی با گلستان', start: '1958-01-01', group: 5, title: 'با ابراهیم گلستان آشنا شد'},
+                {id: 6, content: 'خانه سیاه است', start: '1962-01-01', group: 6, title: 'فیلم مستند خانه سیاه است را ساخت'},
+                {id: 7, content: 'تولدی دیگر', start: '1964-01-01', group: 7, title: 'شاهکار تولدی دیگر را منتشر کرد'},
+                {id: 8, content: 'درگذشت', start: '1967-02-13', group: 8, title: 'در 24 بهمن 1345 در 32 سالگی درگذشت'}
+            ]);
+            
+            const timelineGroups = [
+                {id: 1, content: 'تولد'},
+                {id: 2, content: 'ازدواج'},
+                {id: 3, content: 'خانواده'},
+                {id: 4, content: 'آثار'},
+                {id: 5, content: 'همکاری‌ها'},
+                {id: 6, content: 'فیلم‌سازی'},
+                {id: 7, content: 'شاهکارها'},
+                {id: 8, content: 'پایان'}
+            ];
+            
+
+            function createNetwork() {
+                const container = document.getElementById('visualization');
+                const data = { nodes: nodes, edges: edges };
+                
+                const options = {
+                    nodes: {
+                        shape: 'dot',
+                        size: 20,
+                        font: {
+                            size: 14,
+                            face: 'Tahoma'
+                        },
+                        borderWidth: 2
+                    },
+                    edges: {
+                        width: 2,
+                        smooth: {
+                            type: 'continuous'
+                        }
+                    },
+                    physics: {
+                        enabled: true,
+                        stabilization: {
+                            iterations: 100
+                        }
+                    },
+                    interaction: {
+                        dragNodes: true,
+                        dragView: true,
+                        zoomView: true
+                    }
+                };
+                
+                network = new vis.Network(container, data, options);
+                
+                network.on("click", function(params) {
+                    if (params.nodes.length > 0) {
+                        const nodeId = params.nodes[0];
+                        const node = nodes.get(nodeId);
+                        if (node && node.title) {
+                            alert(node.title);
+                        }
+                    }
+                });
+            }
+            
+            function createTimeline() {
+                const container = document.getElementById('visualization');
+                const options = {
+                    start: '1930-01-01',
+                    end: '1970-01-01',
+                    editable: false,
+                    selectable: true,
+                    showCurrentTime: false,
+                    orientation: 'top',
+                    zoomMin: 10000000000,
+                    zoomMax: 315360000000000,
+                    format: {
+                        minorLabels: {
+                            year: 'YYYY'
+                        }
+                    }
+                };
+                
+                timeline = new vis.Timeline(container, timelineItems, timelineGroups, options);
+            
+
+                timeline.on('select', function(properties) {
+                    if (properties.items && properties.items.length > 0) {
+                        const itemId = properties.items[0];
+                        const item = timelineItems.get(itemId);
+                        if (item && item.title) {
+                            alert(item.title);
+                        }
+                    }
+                });
+            }
+        
+            function changeView(viewType) {
+                currentView = viewType;
+            
+
+                $('.view-btn').removeClass('active');
+                $(`.view-btn[data-view="${viewType}"]`).addClass('active');
+                
+                $('#visualization').empty();
+                
+                if (viewType === 'text') {
+                    $('#visualization-container').slideUp(300);
+                    $('#text-timeline').slideDown(300);
+                } else {
+                    $('#text-timeline').slideUp(300);
+                    $('#visualization-container').slideDown(300, function() {
+                        if (viewType === 'network') {
+                            createNetwork();
+                        } else if (viewType === 'timeline') {
+                            createTimeline();
+                        }
+                    });
+                }
+            }
+            
+
+            $('.view-btn').click(function() {
+                const viewType = $(this).data('view');
+                changeView(viewType);
+            });
+            
+
+            function loadWorks() {
+                console.log("در حال بارگذاری آثار");
+                
+                const jsonPaths = [
+                    "./js/works.json",
+                ];
+                
+                let loaded = false;
+                
+                function tryLoad(index) {
+                    if (index >= jsonPaths.length) {
+                        if (!loaded) {
+                            console.error(" هیچ فایل JSON یافت نشد");
+                            $("#works-container").html(
+                                '<p style="color: red; padding: 10px; background: #ffebee; border-radius: 5px;">' +
+                                'فایل آثار یافت نشد. لطفا مطمئن شوید فایل works.json در پوشه اصلی قرار دارد.' +
+                                '</p>'
+                            );
+                        }
+                        return;
+                    }
+                    
+                    console.log(` تلاش برای بارگذاری از: ${jsonPaths[index]}`);
+                    
+                    $.ajax({
+                        url: jsonPaths[index],
+                        dataType: 'json',
+                        success: function(data) {
+                            loaded = true;
+                            console.log(`آثار از ${jsonPaths[index]} بارگذاری شد`);
+                            displayWorks(data);
+                        },
+                        error: function(xhr, status, error) {
+                            console.warn(`خطا در بارگذاری ${jsonPaths[index]}:`, error);
+                            tryLoad(index + 1);
+                        }
+                    });
+                }
+                
+                tryLoad(0);
+            }
+            
+            function displayWorks(data) {
+                if (!data || data.length === 0) {
+                    $("#works-container").html(
+                        '<p style="color: red;">هیچ اثری برای نمایش یافت نشد.</p>'
+                    );
+                    return;
+                }
+                
+                let worksHtml = '<div class="works-grid">';
+                
+                const groupedWorks = {};
+                data.forEach(work => {
+                    if (!groupedWorks[work.type]) {
+                        groupedWorks[work.type] = [];
+                    }
+                    groupedWorks[work.type].push(work);
+                });
+                
+                Object.keys(groupedWorks).forEach(type => {
+                    worksHtml += `
+                        <div class="work-category">
+                            <h3>${type}</h3>
+                            <div class="works-list">
+                    `;
+                    
+                    groupedWorks[type].forEach(work => {
+                        worksHtml += `
+                            <div class="work-item">
+                                <h4>${work.title} <span class="year">(${work.year})</span></h4>
+                                <p class="work-description">${work.description}</p>
+                            </div>
+                        `;
+                    });
+                    
+                    worksHtml += `
+                            </div>
+                        </div>
+                    `;
+                });
+                
+                worksHtml += '</div>';
+                $("#works-container").html(worksHtml);
+                
+                console.log(` ${data.length} اثر نمایش داده شد`);
+            }
+            
+            $("#toggle-works").click(function() {
+                $("#works-container").slideToggle(300);
+                if ($("#works-container").is(":visible")) {
+                    $(this).text("مخفی کردن آثار");
+                } else {
+                    $(this).text("نمایش آثار");
+                }
+            });
+            
+            loadWorks();
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./assest/js/jquery-ui-1.14.1.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="./assest/css_files/style_index.css">
+   
+   <script src="./assest/js/jquery-4.0.0.min.js"></script>
+   <script src="./assest/js/jquery-ui-1.14.1.custom/jquery-ui.min.js"></script>
+
+    
+    <title>فروغ فرخزاد</title>
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>فروغ فرخزاد</h1>
+            <nav>
+                <a href="index.html" class="active">صفحه اصلی</a>
+                <a href="./assest/html_files/biography.html">زندگینامه</a>
+                <a href="./assest/html_files/poems.html">اشعار</a>
+                <a href="./assest/html_files/films.html">فیلم ها</a>
+                <a href="./assest/html_files/gallery.html">گالری</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <div class="intro-content">
+                <h2>معرفی فروغ فرخزاد</h2>
+                <p>فروغ فرخزاد (۱۳۱۳-۱۳۴۵) از شاعران پیشگام و تأثیرگذار شعر معاصر فارسی است که با اشعار صریح، عاشقانه و جسورانه خود، به ویژه در بیان احساسات و هویت زنانه، تحولی در ادبیات ایران ایجاد کرد.</p>
+                
+                <div class="quote">
+                    <p>"من از نهایت شب حرف میزنم<br>
+                    من از نهایت تاریکی<br>
+                    و از نهایت شب حرف میزنم"</p>
+                </div>
+            </div>
+            <div class="intro-image">
+                <div class="image-placeholder">
+                    <img src="./assest/pictures/forogh.jpg" alt="عکس فروغ فرخزاد" class="forogh_image">
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>اطلاعات بیشتر</h2>
+            <div id="accordion">
+                <h3>ویژگی های هنری</h3>
+                <div>
+                    <p>فروغ فرخزاد را به عنوان یک پیشگام شعر نوین فارسی و زن سنت‌شکن می‌شناسند. صراحت و جسارت او در بیان عواطف و تجربیات زنانه، در زمانه خود کاری نو و بی‌سابقه بود.</p>
+                    <div class="poem-box">
+                        <p>همه هستی من آیه تاریکی است<br>
+                        که تو را در خود تکرار خواهد کرد<br>
+                        به حریم سایه ها<br>
+                        تا ابد پایانی نیست</p>
+                    </div>
+                </div>
+                
+                <h3>خلاصه زندگی</h3>
+                <div>
+                    <p>فروغ‌الزمان فرخزاد در 8 دی سال 1313 در تهران به دنیا آمد. او از نوجوانی استعداد خود را در سرودن شعر نشان داد. فروغ در 16 سالگی ازدواج کرد و در 21 سالگی جدا شد.</p>
+                    <p>اولین سفر فروغ به اروپا در سال 1336 بر روی افکار و جهان‌بینی او بسیار تاثیر گذاشت. او در سال 1337 با ابراهیم گلستان آشنا شد و همکاری با سازمان فیلم گلستان را آغاز کرد.</p>
+                </div>
+                
+                <h3>آثار</h3>
+                <div>
+                    <p>آثار فروغ فرخزاد شامل پنج دفتر شعر می‌شود که سیر تحول فکری و هنری او را نشان می‌دهد:</p>
+                    <ul>
+                        <li>اسیر (۱۳۳۱)</li>
+                        <li>دیوار (۱۳۳۵)</li>
+                        <li>عصیان (۱۳۳۶)</li>
+                        <li>تولدی دیگر (۱۳۴۳)</li>
+                        <li>ایمان بیاوریم به آغاز فصل سرد (۱۳۴۵)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>جستجو در آثار</h2>
+            <div class="ui-widget">
+                <label for="search-works">جستجوی اثر: </label>
+                <input id="search-works" placeholder="نام اثر را بنویسید..." style="padding: 8px; width: 300px; margin-right: 10px;">
+                <button id="search-btn" style="padding: 8px 15px; background: #5d4037; color: white; border: none; border-radius: 5px; cursor: pointer;">جستجو</button>
+            </div>
+            <div id="search-result" style="margin-top: 15px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; display: none;"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p> 2025 - زندگی و آثار فروغ فرخزاد</p>
+            <p id="ajax-status" style="font-size: 0.9em; color: #f1cd96; margin-top: 5px;"></p>
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function() {
+            console.log(" صفحه بارگذاری شد!");
+            
+            
+            let worksData = [];
+            
+            $("#accordion").accordion({
+                collapsible: true,
+                heightStyle: "content",
+                active: 0
+            });
+            
+            
+            function loadWorksForSearch() {
+                console.log(" ...در حال بارگذاری آثار برای جستجو");
+                
+                const jsonPaths = [
+                    "./works.json",
+                ];
+                
+                function tryLoad(index) {
+                    if (index >= jsonPaths.length) {
+                        console.warn("هیچ فایل json یافت نشد");
+                        return;
+                    }
+                    
+                    $.ajax({
+                        url: jsonPaths[index],
+                        dataType: 'json',
+                        success: function(data) {
+                            console.log(`آثار از ${jsonPaths[index]} برای جستجو بارگذاری شد`);
+                            worksData = data;
+                            setupAutocomplete(data);
+                        },
+                        error: function() {
+                            console.warn(` مسیر ${jsonPaths[index]} یافت نشد`);
+                            tryLoad(index + 1);
+                        }
+                    });
+                }
+                
+                tryLoad(0);
+            }
+            
+            
+            function setupAutocomplete(data) {
+                let workTitles = $.map(data, function(work) {
+                    return {
+                        label: `${work.title} (${work.year})`,
+                        value: work.title,
+                        work: work
+                    };
+                });
+                
+                $("#search-works").autocomplete({
+                    source: workTitles,
+                    minLength: 1,
+                    select: function(event, ui) {
+                        event.preventDefault();
+                        $("#search-works").val(ui.item.value);
+                        showSearchResult(ui.item.work);
+                    }
+                });
+            }
+            
+            
+            function showSearchResult(work) {
+                if (!work) {
+                    $("#search-result").html(
+                        '<div style="color: red; padding: 10px; background: #5d4037; border-radius: 5px;">اثری یافت نشد.</div>'
+                    ).slideDown();
+                    return;
+                }
+                
+                $("#search-result").html(`
+                    <h4>${work.title} (${work.year})</h4>
+                    <p><strong>نوع اثر:</strong> ${work.type}</p>
+                    <p>${work.description}</p>
+                    <button id="close-result" style="margin-top: 10px; padding: 5px 10px; background: #5d4037; color: white; border: none; border-radius: 3px; cursor: pointer;">
+                        بستن
+                    </button>
+                `).slideDown();
+                
+                
+                $("#close-result").click(function() {
+                    $("#search-result").slideUp();
+                });
+            }
+            
+            
+            $("#search-btn").click(function() {
+                let searchTerm = $("#search-works").val().trim();
+                
+                if (searchTerm === "") {
+                    alert("لطفاً نام اثری را وارد کنید");
+                    return;
+                }
+                
+                if (worksData.length === 0) {
+                    alert("داده‌های آثار هنوز بارگذاری نشده‌اند. لطفا چند لحظه صبر کنید.");
+                    return;
+                }
+                
+                
+                let result = worksData.find(work => 
+                    work.title.includes(searchTerm) || 
+                    work.title.toLowerCase().includes(searchTerm.toLowerCase())
+                );
+                
+                showSearchResult(result);
+            });
+            
+            
+            $("#search-works").on("input", function() {
+                if ($("#search-result").is(":visible")) {
+                    $("#search-result").slideUp();
+                }
+            });
+            
+            $("#search-works").keypress(function(e) {
+                if (e.which === 13) {
+                    $("#search-btn").click();
+                }
+            });
+            
+            loadWorksForSearch();
+        });
+    </script>
+</body>
+</html>
